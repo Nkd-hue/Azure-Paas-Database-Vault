@@ -118,7 +118,7 @@ The Key Vault Administrator role was assigned to the administrator account to al
 
 *Evidence: Azure portal showing the deployed Key Vault and its configuration.*
 
-![Key Vault Administrator RBAC](05-key-vault-administrator-rbac.png)
+<img width="1407" height="761" alt="Screenshot 2026-11-22 at 11 05 21 PM" src="https://github.com/user-attachments/assets/d02f5b14-9631-4420-a30b-8c58a3801628" />
 
 *Evidence: Azure RBAC showing the Key Vault Administrator role assignment.*
 
@@ -132,17 +132,17 @@ This approach keeps sensitive credentials out of application code and provides a
 
 The secret was configured with the following properties:
 
-- Secret name: `SqlAdminPassword`
+- Secret name: `SqlAdmin`
 - Upload option: Manual
 - Status: Enabled
 
 **Security Note:** The actual password must never be included in GitHub, README files, screenshots, or other publicly accessible documentation.
 
 **Screenshot Evidence**
+<img width="1408" height="881" alt="Screenshot 2026-11-22 at 10 52 15 PM" src="https://github.com/user-attachments/assets/55d6da33-9114-4973-b5fa-a4ec5f509b1f" />
 
-![Key Vault Secret](06-key-vault-secret.png)
 
-*Evidence: Azure Key Vault showing the SqlAdminPassword secret and its enabled status. The secret value must remain hidden.*
+*Evidence: Azure Key Vault showing the SqlAdmin secret and its enabled status. The secret value must remain hidden.*
 
 ---
 
@@ -164,11 +164,11 @@ The Key Vault Secrets User role provides read access to secret values, following
 
 **Screenshot Evidence**
 
-![Managed Identity Configuration](07-managed-identity.png)
+<img width="1408" height="881" alt="Screenshot 2026-11-22 at 11 30 02 PM" src="https://github.com/user-attachments/assets/26dcaa2e-d465-4248-b644-ef797f137bfe" />
 
 *Evidence: Azure virtual machine showing the enabled system-assigned Managed Identity.*
 
-![RBAC Role Assignment](08-rbac-role-assignment.png)
+<img width="1408" height="881" alt="Screenshot 2026-11-22 at 11 40 16 PM" src="https://github.com/user-attachments/assets/26b30c41-729d-4e69-8f8f-1a390ea137b6" />
 
 *Evidence: Azure Key Vault IAM showing the Key Vault Secrets User role assigned to vm-web-01.*
 
@@ -187,7 +187,7 @@ A metrics chart was reviewed to confirm that the database was reporting monitori
 
 **Screenshot Evidence**
 
-![Azure Monitor Metrics](09-azure-monitor-metrics.png)
+<img width="1408" height="881" alt="Screenshot 2026-11-22 at 11 52 05 PM" src="https://github.com/user-attachments/assets/fa5c4018-1477-4098-89e6-a8adc9407a85" />
 
 *Evidence: Azure Monitor displaying the selected database performance metric.*
 
